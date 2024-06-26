@@ -4,7 +4,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <div className="mt-6 md:mt-16 flex md:block mx-4 justify-center ">
-      <div className="bg-[#0D0D0D] rounded-3xl p-3 w-fit">
+      <div className="md:bg-[#0D0D0D] rounded-3xl p-3 w-fit">
         <div className="flex flex-col md:flex-row items-center">
           <div className="mb-2 md:mb-0 flex flex-row items-center">
             <img

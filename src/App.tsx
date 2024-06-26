@@ -2,6 +2,7 @@ import "./App.css";
 // import Experiences from "./components/cards/Experiences";
 import LatestProjectCard from "./components/cards/LatestProjectCard";
 import ProfileCard from "./components/cards/ProfileCard";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
             <Experiences />
           </div> */}
         </div>
+      </div>
+      <div className="footer flex justify-center text-white">
+        <Footer />
       </div>
     </div>
   );
