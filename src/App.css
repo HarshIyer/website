@@ -52,8 +52,8 @@
 
 .reveal-animation {
   animation: slide-animation, text-reveal;
-  animation-duration: 1s, 0.8s;
-  animation-delay: 0s, 1s;
+  animation-duration: 0.8s, 0.7s;
+  animation-delay: 0s, 0.8s;
 }
 
 @keyframes text-reveal-before {
@@ -67,8 +67,8 @@
 
 .text-fade {
   animation: text-reveal-before, text-reveal;
-  animation-duration: 1s, 0.8s;
-  animation-delay: 0s, 1s;
+  animation-duration: 0.8s, 0.8s;
+  animation-delay: 0s, 0.8s;
 }
 .bg-black {
   background-color: #1a1a1b;

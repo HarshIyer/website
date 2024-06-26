@@ -20,9 +20,6 @@ function App() {
               description="An open source Blogging platform."
             />
           </div>
-          {/* <div>
-            <Experiences />
-          </div> */}
         </div>
       </div>
       <div className="footer flex justify-center text-white">

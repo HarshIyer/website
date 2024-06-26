@@ -23,15 +23,6 @@ const ProjectsPage = () => {
       </div>
       <div>
         <ProjectCard
-          title="Blag."
-          description="An open source Blogging platform."
-          tags={["NextJS", "Cloudflare", "Redux", "SSG"]}
-          github="https://www.github.com/HarshIyer/Blag"
-          progress={95}
-          website="https://blag.harshiyer.me"
-        />
-
-        <ProjectCard
           title="Port0"
           description="The authentication service built on Oauth2 standards at the center of IIITK.in"
           tags={["NextJS", "Crypto", "0Auth", "Cloudflare", "Redux"]}
@@ -39,7 +30,14 @@ const ProjectsPage = () => {
           progress={80}
           website="https://port0.iiitk.in"
         />
-
+        <ProjectCard
+          title="Blag."
+          description="An open source Blogging platform."
+          tags={["NextJS", "Cloudflare", "Redux", "SSG"]}
+          github="https://www.github.com/HarshIyer/Blag"
+          progress={95}
+          website="https://blag.harshiyer.me"
+        />
         <ProjectCard
           title="IIITK.in"
           description="IIITK's student run project hosting and authentication service"
