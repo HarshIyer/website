@@ -21,7 +21,7 @@ const Navbar = () => {
               onClick={() => {
                 navigate("/");
               }}
-              className="navbar-item"
+              className="navbar-item "
             >
               /home
             </button>

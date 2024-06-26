@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 const Footer = () => {
   return (
-    <div className="flex flex-row text-[#00F2B8] mb-2">
+    <div className="hidden md:block flex flex-row text-[#00F2B8] mb-2">
       <button
         className="mx-2 "
         onClick={() => window.open("mailto:hello@harshiyer.me", "_blank")}

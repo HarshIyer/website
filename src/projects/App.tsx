@@ -1,14 +1,23 @@
+import { useRef } from "react";
 import Navbar from "../components/Navbar";
 import ProjectCard from "./components/ProjectCard";
+import { useInView } from "framer-motion";
 
 const ProjectsPage = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <div className="bg-black overflow-auto bg-[#000000] h-screen">
+    <div className="bg-black overflow-auto bg-[#000000] h-screen" ref={ref}>
       <div className="flex flex-col lg:ml-48">
         <Navbar />
       </div>
       <div>
-        <h1 className="green-colored text-3xl font-extrabold  ml-[15%] mt-8">
+        <h1
+          className={
+            `green-colored text-3xl font-extrabold  ml-[15%] mt-8 w-fit` +
+            (isInView ? " reveal-animation" : "")
+          }
+        >
           Projects
         </h1>
       </div>
@@ -38,6 +47,14 @@ const ProjectsPage = () => {
           github="https://www.github.com/iiitk-in/"
           progress={60}
           website="https://iiitk.in"
+        />
+        <ProjectCard
+          title="This website"
+          description="Made with Vite, deployed on Cloudflare Pages"
+          tags={["Vite", "Cloudflare", "Tailwind", "Framer"]}
+          github="https://www.github.com/HarshIyer/website"
+          progress={90}
+          website="https://harshiyer.me"
         />
         <ProjectCard
           title="Attendance Helper"
