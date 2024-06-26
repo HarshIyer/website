@@ -12,12 +12,12 @@ const Navbar = () => {
               Proximus
             </h1>
           </div>
-          <div className="flex flex-row ml-auto items-center">
+          <div className="flex flex-row ml-auto items-center ">
             <button
               onClick={() => {
                 navigate("/");
               }}
-              className="navbar-item "
+              className="navbar-item mx-4 md:mx-[30px] text-sm md:text-base inline-block"
             >
               /home
             </button>
@@ -25,7 +25,7 @@ const Navbar = () => {
               onClick={() => {
                 navigate("/projects");
               }}
-              className="navbar-item"
+              className="navbar-item mx-4 md:mx-[30px] text-sm md:text-base inline-block"
             >
               /projects
             </button>
@@ -33,7 +33,7 @@ const Navbar = () => {
               onClick={() => {
                 navigate("/contact");
               }}
-              className="navbar-item"
+              className="navbar-item mx-4 md:mx-[30px] text-sm md:text-base inline-block"
             >
               /contact
             </button>

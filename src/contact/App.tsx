@@ -18,26 +18,26 @@ const ContactPage = () => {
       <div>
         <h1
           className={
-            `w-fit green-colored text-3xl font-extrabold  ml-[15%] mt-8` +
+            `w-fit green-colored text-3xl font-extrabold ml-8 text-center md:ml-[15%] mt-8` +
             (isInView ? " reveal-animation" : "")
           }
         >
           Contact
         </h1>
         <div className={`flex flex-col` + isInView ? " text-fade" : ""}>
-          <p className="text-white text-xl font-semibold ml-[20%] mt-8">
+          <p className="text-white text-xl font-semibold mx-8 md:ml-[20%] mt-8">
             You can send me an email at{" "}
             <span className="green-colored">hello at harshiyer dot me</span>
           </p>
-          <div>
-            <button className="bg-[#575757] text-white font-semibold rounded-lg p-2 ml-[20%] mt-4 hover:bg-[#696969]">
+          <div className="flex flex-row items-center justify-center md:justify-start md:items-start md:flex-row">
+            <button className="bg-[#575757] text-white font-semibold rounded-lg p-2 md:ml-[20%] mt-4 hover:bg-[#696969]">
               <a
                 href="https://www.github.com/HarshIyer"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub />
-                <p className="ml-2"> Github</p>
+                <FaGithub className="h-6 w-6" />
+                <p className="ml-2 hidden md:block"> Github</p>
               </a>
             </button>
             <button className="bg-[#575757] text-white font-semibold rounded-lg p-2 ml-4 mt-4 hover:bg-[#696969]">
@@ -46,7 +46,8 @@ const ContactPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaLinkedin /> <p className="ml-2"> Linkedin</p>
+                <FaLinkedin className="h-6 w-6" />{" "}
+                <p className="ml-2 hidden md:block"> Linkedin</p>
               </a>
             </button>
             <button className="bg-[#575757] text-white font-semibold rounded-lg p-2 ml-4 mt-4 hover:bg-[#696969]">
@@ -55,7 +56,8 @@ const ContactPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <SiTryhackme /> <p className="ml-2"> TryHackMe</p>
+                <SiTryhackme className="h-6 w-6" />{" "}
+                <p className="ml-2 hidden md:block"> TryHackMe</p>
               </a>
             </button>
           </div>
