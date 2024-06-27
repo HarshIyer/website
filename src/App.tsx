@@ -4,6 +4,8 @@ import LatestProjectCard from "./components/cards/LatestProjectCard";
 import ProfileCard from "./components/cards/ProfileCard";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import ExperiencesCard from "./components/cards/ExperiencesCard";
+import Experiences from "./components/cards/Experiences";
 
 function App() {
   return (
@@ -21,6 +23,12 @@ function App() {
             />
           </div>
         </div>
+      </div>
+      <div className="md:mt-96 w-fit green-colored text-3xl font-extrabold ml-8 text-center md:ml-[15%] mt-8">
+        <Experiences />
+      </div>{" "}
+      <div className={`flex justify-center my-12 mb-48`}>
+        <ExperiencesCard />
       </div>
       <div className="footer flex justify-center text-white">
         <Footer />

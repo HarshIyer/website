@@ -25,7 +25,8 @@ const ProjectCard = (props: ProjectCardProps) => {
       <div className="flex flex-row justify-between">
         <h1
           className={
-            `text-3xl font-extrabold` + (isInView ? " reveal-animation" : "")
+            `text-3xl text-[#00f2b8] font-extrabold` +
+            (isInView ? " reveal-animation" : "")
           }
         >
           {title}

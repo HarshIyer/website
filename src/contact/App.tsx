@@ -1,11 +1,9 @@
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-
 import Navbar from "../components/Navbar";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiTryhackme } from "react-icons/si";
-import "./App.css";
 const ContactPage = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -35,6 +33,7 @@ const ContactPage = () => {
                 href="https://www.github.com/HarshIyer"
                 target="_blank"
                 rel="noreferrer"
+                className="flex flex-row justify-center items-center"
               >
                 <FaGithub className="h-6 w-6" />
                 <p className="ml-2 hidden md:block"> Github</p>
@@ -45,6 +44,7 @@ const ContactPage = () => {
                 href="https://www.linkedin.com/in/harshiyer"
                 target="_blank"
                 rel="noreferrer"
+                className="flex flex-row justify-center items-center"
               >
                 <FaLinkedin className="h-6 w-6" />{" "}
                 <p className="ml-2 hidden md:block"> Linkedin</p>
@@ -55,6 +55,7 @@ const ContactPage = () => {
                 href="https://tryhackme.com/p/proximuz"
                 target="_blank"
                 rel="noreferrer"
+                className="flex flex-row justify-center items-center"
               >
                 <SiTryhackme className="h-6 w-6" />{" "}
                 <p className="ml-2 hidden md:block"> TryHackMe</p>
