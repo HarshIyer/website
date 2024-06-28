@@ -25,9 +25,11 @@ const ExperiencesCard = () => {
       }
       ref={ref}
     >
-      <table className={`rounded-xl w-fit text-xl text-start overflow-x-auto`}>
+      <table
+        className={`rounded-xl w-fit text-base md:text-xl text-start overflow-x-auto`}
+      >
         {" "}
-        <thead className="text-xl text-[#00f2b8] uppercase bg-[#0D0D0D]">
+        <thead className="text-sm md:text-xl text-[#00f2b8] uppercase bg-[#0D0D0D]">
           <tr>
             <th className="px-6 py-3 text-start">CTF Name</th>
             <th className="px-6 py-3 text-start">CTF Rank</th>
@@ -36,7 +38,7 @@ const ExperiencesCard = () => {
         </thead>
         <tbody className="text-start">
           {CTFs.map((ctf) => (
-            <tr className="text-start text-xl border-b bg-[#111111] border-black">
+            <tr className="text-start text-sm md:text-xl border-b bg-[#111111] border-black">
               {" "}
               <td className="text-start px-6 py-4">
                 {" "}

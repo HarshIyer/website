@@ -31,7 +31,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         >
           {title}
         </h1>
-        <div>
+        <div className="flex flex-row ml-4 md:ml-0">
           <button
             className={isInView ? " text-fade" : ""}
             onClick={() => window.open(github, "_blank")}
@@ -60,7 +60,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         <div className="flex flex-col my-2 md:my-0 md:flex-row justify-between">
           <div className="flex flex-row overflow-scroll items-center sm:flex-row my-4">
             {tags.map((tag) => (
-              <span className="bg-[#424242] p-2 px-4 font-semibold text-sm md:text-lg mr-4 rounded-lg hover:cursor-pointer hover:bg-[#808080] transition-all">
+              <span className="bg-[#424242] p-2 md:px-4 font-semibold text-sm md:text-lg mr-4 rounded-lg hover:cursor-pointer hover:bg-[#808080] transition-all">
                 {tag}
               </span>
             ))}
