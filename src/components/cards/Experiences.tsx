@@ -16,7 +16,7 @@ const Experiences = () => {
       </h1>
       <h1
         className={
-          ` text-[#00f2b8] text-2xl mt-12 ml-4 xl:ml-24 xl:mt-12 w-fit font-extrabold` +
+          ` text-[#00f2b8] text-2xl mt-12 ml-4  xl:mt-12 w-fit font-extrabold` +
           (isInView ? " reveal-animation" : "")
         }
       >
