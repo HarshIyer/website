@@ -18,8 +18,8 @@ function App() {
           </div>
           <div className="mx-12">
             <LatestProjectCard
-              title="Blag."
-              description="An open source Blogging platform."
+              title="Foursight"
+              description="An open source trading and analysis platform for the Indian Stock Market."
             />
           </div>
         </div>

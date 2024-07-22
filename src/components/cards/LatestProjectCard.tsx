@@ -26,7 +26,7 @@ const LatestProjectCard = (props: propsType) => {
     >
       <h1 className=" green-colored font-extrabold text-3xl">Latest Project</h1>
       <h3 className="font-semibold text-xl mt-2 text-white">{title}</h3>
-      <p className="text-gray-500 mt-2">{description}</p>
+      <p className="text-gray-500 mt-2 max-w-[480px]">{description}</p>
     </div>
   );
 };

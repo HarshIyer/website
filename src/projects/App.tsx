@@ -23,6 +23,14 @@ const ProjectsPage = () => {
       </div>
       <div>
         <ProjectCard
+          title="Foursight"
+          description="An Open Source Paper trading platform with live data and analysis of the Indian Stock Market."
+          tags={["NextJS", "RESTful", "Middleware", "0Auth", "Hono"]}
+          github="https://github.com/HarshIyer/Foursight"
+          progress={70}
+          website="https://foursight.harshiyer.me/"
+        />
+        <ProjectCard
           title="Port0"
           description="The authentication service built on Oauth2 standards at the center of IIITK.in"
           tags={["NextJS", "Crypto", "0Auth", "Cloudflare", "Redux"]}
