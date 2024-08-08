@@ -16,13 +16,13 @@ const ContactPage = () => {
       <div>
         <h1
           className={
-            `w-fit green-colored text-3xl font-extrabold ml-8 text-center md:ml-[15%] mt-8` +
+            w-fit green-colored text-3xl font-extrabold ml-8 text-center md:ml-[15%] mt-8 +
             (isInView ? " reveal-animation" : "")
           }
         >
           Contact
         </h1>
-        <div className={`flex flex-col` + isInView ? " text-fade" : ""}>
+        <div className={flex flex-col + isInView ? " text-fade" : ""}>
           <p className="text-white text-xl font-semibold mx-8 md:ml-[20%] mt-8">
             You can send me an email at{" "}
             <span className="green-colored">hello at harshiyer dot me</span>
