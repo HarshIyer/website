@@ -6,6 +6,15 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ExperiencesCard from "./components/cards/ExperiencesCard";
 import Experiences from "./components/cards/Experiences";
+import { useEffect } from "react";
+
+export const VitepressWrapper: React.FC = () => {
+  useEffect(() => {
+    window.location.href = "/blog/index.html";
+  }, []);
+
+  return null;
+};
 
 function App() {
   return (

@@ -63,6 +63,33 @@ const ContactPage = () => {
             </button>
           </div>
         </div>
+        <div>
+          <div className="md:ml-[15%] mx-8 my-8 text-xl font-semibold green-colored">
+            <p>My PGP key</p>
+          </div>
+          <div className="  ">
+            <pre className="overflow-x-scroll md:ml-[20%] bg-[#575757] mx-8 text-white  rounded-lg p-2  mt-4">
+              {`-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+              mDMEZrUQLRYJKwYBBAHaRw8BAQdAmVmtWaBxs+cSZfV5NjESlG3Oduy99n0/HG+3
+              E7D5gHa0HXByb3hpbXVzIDxoZWxsb0BoYXJzaGl5ZXIubWU+iJkEExYKAEEWIQQf
+              zOifLLzbMfPucqxR1Ahykd6HYQUCZrUQLQIbAwUJBaOagAULCQgHAgIiAgYVCgkI
+              CwIEFgIDAQIeBwIXgAAKCRBR1Ahykd6HYcVJAP46aKr54SYAxzJ6LGZrJysqBsnH
+              BaU6Eywh1jpLGF6otQD+KSgQCHl1GvR+8agAadOGcE/8Pv18+GY6uhkD+WKfKAO4
+              OARmtRAtEgorBgEEAZdVAQUBAQdA5EmbGbCQKFgWmzmUk+S9oVuk2Y916rbO6Y/3
+              eYewligDAQgHiH4EGBYKACYWIQQfzOifLLzbMfPucqxR1Ahykd6HYQUCZrUQLQIb
+              DAUJBaOagAAKCRBR1Ahykd6HYWaXAP95XVhlsWNAfvWi9fUY/MzTba02QM2/AkJP
+              Wl0tZByHCQEApl6Jjx6X9WeQf/F91g/bwRmWYV2DE6TmALQgnNhKdQM=
+              =QSzq
+
+-----END PGP PUBLIC KEY BLOCK-----`}
+            </pre>
+          </div>
+          <p className="text-white md:mx-[15%] mx-8 my-4">
+            {" "}
+            Recipient: <span className="green-colored">proximus</span>
+          </p>
+        </div>
       </div>
     </div>
   );

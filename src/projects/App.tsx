@@ -7,7 +7,7 @@ const ProjectsPage = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <div className="bg-black overflow-auto bg-[#000000] h-screen" ref={ref}>
+    <div className=" overflow-auto bg-[#000000] h-screen" ref={ref}>
       <div className="flex flex-col lg:ml-48">
         <Navbar />
       </div>
